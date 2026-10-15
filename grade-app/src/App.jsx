@@ -25,7 +25,6 @@ function App() {
   const points = users.map((user) => user.point);
   const maxPoint = Math.max(Math.max.apply(null, points), 1);
 
-  // 1. 함수 이름을 handlePointUpdate로 수정 및 오타(Nmber, poitValue) 수정
   const handlePointUpdate = () => {
     const pointValue = Number(amount)
     const userId = Number(selectedId)
@@ -37,7 +36,6 @@ function App() {
 
     const selectedUser = users.find((user) => user.id === userId)
 
-    // 2. 중괄호 추가 및 오타 수정
     if (pointType === 'subtract' && pointValue > selectedUser.point) {
       setMessage('현재 보유 포인트보다 많이 차감할 수 없습니다.')
       return
