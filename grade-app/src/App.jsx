@@ -36,6 +36,7 @@ function App() {
 
     const selectedUser = users.find((user) => user.id === userId)
 
+
     if (pointType === 'subtract' && pointValue > selectedUser.point) {
       setMessage('현재 보유 포인트보다 많이 차감할 수 없습니다.')
       return
